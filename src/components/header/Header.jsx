@@ -3,6 +3,32 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const menu = [
+    {
+      name: "Home",
+      link: "/",
+      sub: {},
+    },
+    {
+      name: "projects ",
+      link: "/projects",
+      sub: [
+        {
+          name: "hand for help",
+          link: "/projects/hand4help",
+        },
+        {
+          name: "parking place",
+          link: "/projects/parking",
+        },
+      ],
+    },
+    {
+      name: "Service",
+      link: "/service",
+    },
+  ];
+
   return (
     <header>
       <div className="header_top">
@@ -39,28 +65,27 @@ export default function Header() {
         <div className="container">
           <ul className="d-flex">
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">
-                About us
-                <ul>
-                  <li>
-                    <a href="#/app/sub1">sub menu</a>
-                    <a href="#/app/sub1">sub menu</a>
-                    <a href="#/app/sub1">sub menu</a>
-                  </li>
-                </ul>
-              </a>
+              <Link to="/projects">projects</Link>
+              <ul>
+                <li>
+                  <Link to="/projects/hand4help">hand for help</Link>
+                </li>
+                <li>
+                  <Link to="/projects/parking">parking place</Link>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="">services</a>
+              <Link to="/services">services</Link>
             </li>
             <li>
               <a href="">Non sence</a>
             </li>
             <li>
-              <a href="">contaxt</a>
+              <a href="">contact</a>
             </li>
           </ul>
         </div>
