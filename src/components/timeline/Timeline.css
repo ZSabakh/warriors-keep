@@ -1,0 +1,36 @@
+.timeline_row1 {
+  display: inline;
+  justify-content: center;
+}
+
+.vl {
+  border-left: 6px solid rgb(37, 117, 192);
+  height: 500px;
+  position: absolute;
+  left: 50%;
+}
+
+.timeline_col1 {
+  margin: 5% 0 0 25%;
+  float: left;
+}
+
+.timeline_col2 {
+  margin: 5% 15% 0 0;
+  float: right;
+}
+
+.timeline_col2 img {
+  border-radius: 5px;
+  height: 200px;
+  width: 380px;
+}
+
+.timeline_box {
+  text-align: center;
+  background-color: khaki;
+}
+
+.timeline_box h1 {
+  font-size: 2.4rem;
+}

@@ -1,0 +1,57 @@
+.carousel .slide .customLegend {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.carousel:hover .slide .customLegend {
+  opacity: 1;
+}
+
+.carousel .slide .customLegend h1 {
+  font-size: 3.1rem;
+  text-transform: uppercase;
+}
+
+.carousel .slide .customLegend u {
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.carousel .slide .customLegend button {
+  border-radius: 3px;
+  padding: 15px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: #c24f4f 1px solid;
+  color: rgb(255, 253, 253);
+  background-color: #b41c0b;
+}
+
+.carousel .slide .customLegend button:hover {
+  border-radius: 5px;
+  background-color: #992113;
+  transition: 250ms;
+  color: rgb(255, 255, 255);
+  background-color: #8d1b0e;
+}
