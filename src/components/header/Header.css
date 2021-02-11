@@ -32,7 +32,9 @@
   height: 120px;
   padding: 20px;
   left: auto;
-  background: #202c54;
+  z-index: 99;
+  background: #ffffff;
+  border: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +42,7 @@
 
 header nav {
   width: 100%;
-  background: red;
+  background: #202c54;
   height: 80px;
   line-height: 80px;
 }
@@ -49,4 +51,37 @@ header nav ul {
   float: right;
   margin: 0;
   padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+header nav ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 26px;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  border-color: #e90041;
+}
+
+header a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+header nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  padding-top: 30px;
+  transition: all 0.5s ease;
+  left: 0;
+  z-index: 9;
+  background-color: red;
+  display: none;
 }

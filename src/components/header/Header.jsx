@@ -37,12 +37,29 @@ export default function Header() {
       </div>
       <nav>
         <div className="container">
-          <ul>
+          <ul className="d-flex">
             <li>
               <a href="">Home</a>
-              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">
+                About us
+                <ul>
+                  <li>
+                    <a href="#/app/sub1">sub menu</a>
+                    <a href="#/app/sub1">sub menu</a>
+                    <a href="#/app/sub1">sub menu</a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li>
               <a href="">services</a>
+            </li>
+            <li>
               <a href="">Non sence</a>
+            </li>
+            <li>
               <a href="">contaxt</a>
             </li>
           </ul>
