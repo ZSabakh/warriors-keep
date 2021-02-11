@@ -5,52 +5,80 @@ import "./Timeline.css";
 const Timeline = () => {
   return (
     <>
-      <div className="timeline_row1">
+      <div className="timeline_row">
         <div className="timeline_col1">
           <div className="timeline_box" id="xarrowBox">
-            <h1>Dogs</h1>
-            <p>Some text about picture</p>
+            <h1>What we do</h1>
+            <p>
+              <i>Some text about &nbsp;</i>
+              <u>our mission.</u>
+            </p>
           </div>
         </div>
         <div class="vl" id="xarrowLine"></div>
         <div className="timeline_col2">
           <img
             id="xarrowImg"
-            src="https://static.thebark.com/sites/default/files/content/article/full/service-dogs-support-ptsd.jpg"
+            src="http://www.southernoakkennels.com/wp-content/uploads/2015/06/southernoak_slider_4.jpg"
           />
         </div>
       </div>
-      <div className="timeline_row1">
-        <div className="timeline_col1">
-          <div className="timeline_box" id="xarrowBox">
-            <h1>Dogs</h1>
-            <p>Some text about picture</p>
-          </div>
-        </div>
-        <div class="vl" id="xarrowLine"></div>
+
+      <div className="timeline_row">
         <div className="timeline_col2">
           <img
-            id="xarrowImg"
-            src="https://static.thebark.com/sites/default/files/content/article/full/service-dogs-support-ptsd.jpg"
+            id="xarrowImg2"
+            src="http://www.southernoakkennels.com/wp-content/uploads/2015/06/southernoak_slider_4.jpg"
           />
         </div>
+        <div className="timeline_col1">
+          <div className="timeline_box" id="xarrowBox2">
+            <h1>What we do</h1>
+            <p>
+              <i>Some text about &nbsp;</i>
+              <u>our mission.</u>
+            </p>
+          </div>
+        </div>
       </div>
+
       <Xarrow
-        lineColor="rgb(37, 117, 192)"
+        lineColor="rgb(94, 102, 110)"
         headSize={0}
-        strokeWidth={5}
+        strokeWidth={2}
         path="grid"
+        startAnchor="right"
+        endAnchor="bottom"
         start="xarrowBox"
         end="xarrowLine"
       />
       <Xarrow
-        lineColor="rgb(37, 117, 192)"
+        lineColor="rgb(94, 102, 110)"
         headSize={0}
-        startAnchor="right"
-        strokeWidth={5}
+        startAnchor="bottom"
+        strokeWidth={2}
         path="grid"
         start="xarrowLine"
         end="xarrowImg"
+      />
+      <Xarrow
+        lineColor="rgb(94, 102, 110)"
+        headSize={0}
+        strokeWidth={2}
+        path="grid"
+        startAnchor="left"
+        endAnchor="bottom"
+        start="xarrowBox2"
+        end="xarrowLine"
+      />
+      <Xarrow
+        lineColor="rgb(94, 102, 110)"
+        headSize={0}
+        startAnchor="bottom"
+        strokeWidth={2}
+        path="grid"
+        start="xarrowLine"
+        end="xarrowImg2"
       />
     </>
   );

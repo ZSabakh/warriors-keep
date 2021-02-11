@@ -1,3 +1,7 @@
+.carousel_container img {
+  filter: brightness(0.7);
+}
+
 .carousel .slide .customLegend {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -5,7 +9,7 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   left: 50%;
   margin-left: -45%;
   width: 90%;
@@ -28,6 +32,7 @@
 }
 
 .carousel .slide .customLegend h1 {
+  margin: 0 0 30px 0;
   font-size: 3.1rem;
   text-transform: uppercase;
 }
@@ -38,20 +43,36 @@
   text-underline-offset: 5px;
 }
 
-.carousel .slide .customLegend button {
+.carousel .slide .customLegend .carousel_button1 {
   border-radius: 3px;
-  padding: 15px 16px;
+  padding: 10px 16px;
   font-weight: bold;
   text-transform: uppercase;
   border: #c24f4f 1px solid;
-  color: rgb(255, 253, 253);
+  color: rgb(255, 255, 255);
   background-color: #b41c0b;
+  letter-spacing: 1.8px;
 }
 
-.carousel .slide .customLegend button:hover {
-  border-radius: 5px;
+.carousel .slide .customLegend .carousel_button1:hover {
   background-color: #992113;
   transition: 250ms;
-  color: rgb(255, 255, 255);
-  background-color: #8d1b0e;
+  color: rgb(240, 238, 238);
+}
+
+.carousel .slide .customLegend .carousel_button2 {
+  border-radius: 3px;
+  padding: 10px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: #dddddd 1px solid;
+  color: rgb(109, 109, 109);
+  background-color: #eeeeee;
+  letter-spacing: 1.8px;
+}
+
+.carousel .slide .customLegend .carousel_button2:hover {
+  background-color: #d8d8d8;
+  transition: 250ms;
+  color: rgb(20, 20, 20);
 }

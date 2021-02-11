@@ -6,43 +6,42 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const CustomCarousel = () => {
   return (
     <Carousel
+      showStatus={false}
+      className="carousel_container"
       showThumbs={false}
       showArrows={true}
       useKeyboardArrows={true}
       autoPlay={true}
       interval={3000}
-      // onChange={onChange}
-      // onClickItem={onClickItem}
-      // onClickThumb={onClickThumb}
     >
       <div>
         <img
           style={{ height: "420px" }}
-          src="https://www.rover.com/blog/wp-content/uploads/2017/10/swimmer-802890_1280-960x540.jpg"
+          src="https://patriotpaws.org/wp-content/uploads/2016/02/Veteran-Slide-Elead-b-1438x430.jpg"
         />
         <p className="customLegend">
           <h1>
             Veteran's <u>best friend.</u>
           </h1>
-          <button>Mission</button>
+          <button className="carousel_button1">See More</button>
         </p>
       </div>
       <div>
         <img
           style={{ height: "420px" }}
-          src="https://static.thebark.com/sites/default/files/content/article/full/service-dogs-support-ptsd.jpg"
+          src="https://patriotpaws.org/wp-content/uploads/2016/02/Brian-Field-Justice-RWVM-b-1500x430.jpg"
         />
         <p className="customLegend">
           <h1>
             Professionally trained<u> dogs.</u>
           </h1>
-          <button>Why</button>
+          <button className="carousel_button2">Why</button>
         </p>
       </div>
       <div>
         <img
           style={{ height: "420px" }}
-          src="http://jackidelecki.com/wp-content/uploads/2015/06/120503-ptsd-dogs-hilson-bcol-11a.3803807700.jpg"
+          src="https://patriotpaws.org/wp-content/uploads/2017/01/Prison-Jan-2017-1500x430.jpg"
         />
         <p className="customLegend">
           <h1>
