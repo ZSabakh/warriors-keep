@@ -1,16 +1,16 @@
 import "./Header.css";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const menu = [
     {
       name: "Home",
       link: "/",
-      sub: {},
+      sub: [],
     },
     {
-      name: "projects ",
+      name: "projects",
       link: "/projects",
       sub: [
         {
@@ -26,6 +26,17 @@ export default function Header() {
     {
       name: "Service",
       link: "/service",
+      sub: [],
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      sub: [],
+    },
+    {
+      name: "Donate",
+      link: "https://www.google.com/",
+      sub: [],
     },
   ];
 
@@ -43,9 +54,9 @@ export default function Header() {
             </div>
             <div className="text-center text-lg-right col-lg-6">
               <ul>
-                <li>dasdkoas</li>
-                <li>dasdsasa</li>
-                <li>dasd897asda</li>
+                <li>Address sample string</li>
+                <li>(+1) 995 555 555 555</li>
+                <li>mail@sampledomain.org</li>
               </ul>
             </div>
           </div>
@@ -64,28 +75,28 @@ export default function Header() {
       <nav>
         <div className="container">
           <ul className="d-flex">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">projects</Link>
-              <ul>
-                <li>
-                  <Link to="/projects/hand4help">hand for help</Link>
-                </li>
-                <li>
-                  <Link to="/projects/parking">parking place</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link to="/services">services</Link>
-            </li>
-            <li>
-              <a href="">Non sence</a>
-            </li>
-            <li>
-              <a href="">contact</a>
+            {menu.map((item, index) => (
+              <li key={index}>
+                <NavLink activeClassName="active" exact to={item.link}>
+                  {item.name}
+                </NavLink>
+                {item.sub.length != 0 ? (
+                  <ul>
+                    <div className="container sub-menu justify-content-start">
+                      {item.sub.map((sub_item, sub_index) => (
+                        <li key={sub_index}>
+                          <NavLink to={sub_item.link}>{sub_item.name}</NavLink>
+                        </li>
+                      ))}
+                    </div>
+                  </ul>
+                ) : (
+                  ""
+                )}
+              </li>
+            ))}
+            <li className="donate_item">
+              <a href="https://google.com/">Donate</a>
             </li>
           </ul>
         </div>
