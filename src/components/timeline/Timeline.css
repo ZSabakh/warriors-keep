@@ -1,4 +1,5 @@
 .timeline_row {
+  background-image: url(http://167.99.7.161/uploads/vet/bg.jpg);
   display: flex;
 }
 
@@ -13,7 +14,6 @@
 .timeline_col2 {
   text-align: center;
   width: 50%;
-  background-image: url(http://167.99.7.161/uploads/vet/bg.jpg);
 }
 
 .timeline_row img {
@@ -33,7 +33,7 @@
   background-color: rgba(51, 50, 50, 0.178);
 }
 
-.timeline_box h1 {
+.timeline_box h2 {
   font-size: 2rem;
 }
 

@@ -8,7 +8,7 @@ const Timeline = () => {
       <div className="timeline_row">
         <div className="timeline_col1">
           <div className="timeline_box" id="xarrowBox">
-            <h1>What we do</h1>
+            <h2>What we do</h2>
             <p>
               <i>Some text about &nbsp;</i>
               <u>our mission.</u>
@@ -33,7 +33,7 @@ const Timeline = () => {
         </div>
         <div className="timeline_col1">
           <div className="timeline_box" id="xarrowBox2">
-            <h1>What we do</h1>
+            <h2>What we do</h2>
             <p>
               <i>Some text about &nbsp;</i>
               <u>our mission.</u>
