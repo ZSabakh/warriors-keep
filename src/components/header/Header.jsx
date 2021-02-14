@@ -1,8 +1,45 @@
 import "./Header.css";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
+  const menu = [
+    {
+      name: "Home",
+      link: "/",
+      sub: [],
+    },
+    {
+      name: "projects",
+      link: "/projects",
+      sub: [
+        {
+          name: "hand for help",
+          link: "/projects/hand4help",
+        },
+        {
+          name: "parking place",
+          link: "/projects/parking",
+        },
+      ],
+    },
+    {
+      name: "Service",
+      link: "/service",
+      sub: [],
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      sub: [],
+    },
+    {
+      name: "Donate",
+      link: "https://www.google.com/",
+      sub: [],
+    },
+  ];
+
   return (
     <header>
       <div className="header_top">
@@ -17,9 +54,9 @@ export default function Header() {
             </div>
             <div className="text-center text-lg-right col-lg-6">
               <ul>
-                <li>dasdkoas</li>
-                <li>dasdsasa</li>
-                <li>dasd897asda</li>
+                <li>Address sample string</li>
+                <li>(+1) 995 555 555 555</li>
+                <li>mail@sampledomain.org</li>
               </ul>
             </div>
           </div>
@@ -37,13 +74,29 @@ export default function Header() {
       </div>
       <nav>
         <div className="container">
-          <ul>
-            <li>
-              <a href="">Home</a>
-              <a href="">About us</a>
-              <a href="">services</a>
-              <a href="">Non sence</a>
-              <a href="">contaxt</a>
+          <ul className="d-flex">
+            {menu.map((item, index) => (
+              <li key={index}>
+                <NavLink activeClassName="active" exact to={item.link}>
+                  {item.name}
+                </NavLink>
+                {item.sub.length != 0 ? (
+                  <ul>
+                    <div className="container sub-menu justify-content-start">
+                      {item.sub.map((sub_item, sub_index) => (
+                        <li key={sub_index}>
+                          <NavLink to={sub_item.link}>{sub_item.name}</NavLink>
+                        </li>
+                      ))}
+                    </div>
+                  </ul>
+                ) : (
+                  ""
+                )}
+              </li>
+            ))}
+            <li className="donate_item">
+              <a href="https://google.com/">Donate</a>
             </li>
           </ul>
         </div>

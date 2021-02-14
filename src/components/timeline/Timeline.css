@@ -1,0 +1,49 @@
+.timeline_row {
+  background-image: url(http://167.99.7.161/uploads/vet/bg.jpg);
+  display: flex;
+}
+
+.vl {
+  border-left: 3px solid rgb(94, 102, 110);
+  height: 700px;
+  position: absolute;
+  left: 50%;
+}
+
+.timeline_col1,
+.timeline_col2 {
+  text-align: center;
+  width: 50%;
+}
+
+.timeline_row img {
+  margin: 50px 0 0 0;
+  border-radius: 5px;
+  height: 200px;
+  width: 490px;
+}
+
+.timeline_box {
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 70px auto 0px auto;
+  width: 40%;
+  border: rgb(241, 241, 241) 0.1px solid;
+  background-color: rgba(51, 50, 50, 0.178);
+}
+
+.timeline_box h2 {
+  font-size: 2rem;
+}
+
+.timeline_box p {
+  font-size: 1.1rem;
+}
+
+.timeline_box p u {
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+  color: rgb(240, 10, 10);
+  font-weight: bolder;
+}
