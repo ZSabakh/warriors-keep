@@ -24,8 +24,8 @@ export default function Header() {
       ],
     },
     {
-      name: "Service",
-      link: "/service",
+      name: "Resources",
+      link: "/resources",
       sub: [],
     },
     {
