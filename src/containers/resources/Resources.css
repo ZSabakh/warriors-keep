@@ -1,0 +1,7 @@
+.resources_container {
+  margin: 5% 0 5% 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
