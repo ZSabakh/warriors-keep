@@ -119,3 +119,14 @@ ul li ul li {
 .donate_item {
   background: #e90041;
 }
+
+@media only screen and (max-width: 990px) {
+  header nav ul li,
+  .header_top {
+    display: none;
+  }
+}
+
+.drawer_opener_icon {
+  float: right;
+}
