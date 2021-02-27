@@ -27,3 +27,9 @@
   font-size: 0.8rem;
   margin: auto 0 0 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .resource_card {
+    width: 90%;
+  }
+}

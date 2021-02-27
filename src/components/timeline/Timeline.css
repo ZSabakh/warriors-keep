@@ -1,6 +1,13 @@
 .timeline_row {
+  display: none;
   background-image: url(http://167.99.7.161/uploads/vet/bg.jpg);
   display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline_container {
+    display: none;
+  }
 }
 
 .vl {
