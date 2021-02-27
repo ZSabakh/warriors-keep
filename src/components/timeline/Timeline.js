@@ -4,7 +4,7 @@ import "./Timeline.css";
 
 const Timeline = () => {
   return (
-    <>
+    <div className="timeline_container">
       <div className="timeline_row">
         <div className="timeline_col1">
           <div className="timeline_box" id="xarrowBox">
@@ -80,7 +80,7 @@ const Timeline = () => {
         start="xarrowLine"
         end="xarrowImg2"
       />
-    </>
+    </div>
   );
 };
 

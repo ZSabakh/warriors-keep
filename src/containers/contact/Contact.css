@@ -121,3 +121,9 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact_box_container {
+    width: 90%;
+  }
+}

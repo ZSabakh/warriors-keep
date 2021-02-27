@@ -11,16 +11,16 @@ const Contact = () => {
             <input
               placeholder="Your Name"
               type="text"
-              tabindex="1"
+              tabIndex="1"
               required
-              autofocus
+              autoFocus
             />
           </fieldset>
           <fieldset>
             <input
               placeholder="Your Email Address"
               type="email"
-              tabindex="2"
+              tabIndex="2"
               required
             />
           </fieldset>
@@ -28,17 +28,17 @@ const Contact = () => {
             <input
               placeholder="Your Phone Number (Optional)"
               type="tel"
-              tabindex="3"
+              tabIndex="3"
               required
             />
           </fieldset>
           <fieldset>
-            <input placeholder="Subject" type="subject" tabindex="4" required />
+            <input placeholder="Subject" type="subject" tabIndex="4" required />
           </fieldset>
           <fieldset>
             <textarea
               placeholder="Type your Message body here."
-              tabindex="5"
+              tabIndex="5"
               required
             ></textarea>
           </fieldset>
