@@ -10,7 +10,7 @@ export default function Header() {
 
   const menu = [
     {
-      name: "Home",
+      name: "home",
       link: "/",
       sub: [],
     },
@@ -29,12 +29,12 @@ export default function Header() {
       ],
     },
     {
-      name: "Resources",
+      name: "resources",
       link: "/resources",
       sub: [],
     },
     {
-      name: "Contact",
+      name: "contact",
       link: "/contact",
       sub: [],
     },
