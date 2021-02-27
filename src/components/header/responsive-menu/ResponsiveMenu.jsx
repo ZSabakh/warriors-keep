@@ -3,20 +3,14 @@ import { useState, useEffect } from "react";
 import "./drawer.css";
 import { NavLink } from "react-router-dom";
 
-export default function ResponsiveMenu({ menu, isDrawerOpen }) {
-  const [menuIsOpen, setMenuIsOpen] = useState(isDrawerOpen);
-
-  useEffect(() => {
-    setMenuIsOpen(isDrawerOpen);
-  }, [isDrawerOpen]);
-
+export default function ResponsiveMenu({ menu, isDrawerOpen, showDrawer }) {
   const changeDrawerVisibility = () => {
-    setMenuIsOpen(!menuIsOpen);
+    showDrawer(!isDrawerOpen);
   };
 
   return (
     <div
-      className={`drawer_wrapper ${menuIsOpen ? "open" : "close"}`}
+      className={`drawer_wrapper ${isDrawerOpen ? "open" : "close"}`}
       onClick={changeDrawerVisibility}
     >
       <nav>

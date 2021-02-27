@@ -7,7 +7,6 @@ import ResponsiveMenu from "./responsive-menu/ResponsiveMenu.jsx";
 
 export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   const menu = [
     {
       name: "Home",
@@ -76,12 +75,11 @@ export default function Header() {
 
         <nav>
           <div className="container">
-            <button
+            <div
+              // src="https://cdn2.iconfinder.com/data/icons/4web-3/139/menu-512.png"
               className="drawer_opener_icon"
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-            >
-              open
-            </button>
+            ></div>
             <ul className="d-flex">
               {menu.map((item, index) => (
                 <li key={index}>
@@ -113,7 +111,13 @@ export default function Header() {
         </nav>
       </header>
 
-      <ResponsiveMenu menu={menu} isDrawerOpen={isDrawerOpen} />
+      <ResponsiveMenu
+        menu={menu}
+        isDrawerOpen={isDrawerOpen}
+        showDrawer={(cb) => {
+          setIsDrawerOpen(cb);
+        }}
+      />
     </div>
   );
 }
