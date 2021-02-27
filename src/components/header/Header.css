@@ -119,3 +119,28 @@ ul li ul li {
 .donate_item {
   background: #e90041;
 }
+
+@media only screen and (max-width: 600px) {
+  header nav ul li,
+  .header_top {
+    display: none;
+  }
+
+  .logo {
+    background-color: transparent;
+    height: 79px;
+  }
+
+  .drawer_opener_icon {
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7klEQVR4nO3cMW7iQBQG4GcLF7kAnZUrRNunSpGLbLEdZ0kXKVwkRSr61V4hcscFUthitlgr0jZ4EARi5vvqGfSk92QPDPojAAAAAAAAAAAAAACAuaoO3bDdbu92u92viHiIiNuIaE5eFYfoI+I9It7qun5eLpd/DtmcPQBd1900TfMUET8P2cdZpYhY932/atv2I2dDViO7rrtZLBavVVXdH1UeZ5FS2gzD8JgzBHXOBzZN86T581FV1f34tJ5eO7VgfOf/zlnLt5Lquv4xdSaYfAKMBz7Nn59q7N1eOa+AhxMUw2VM9i5nAG5PUAiXMdm7rEMg1ytnAN6/vAq+ymTvcgbg7QSFcBmTvZscgLqun+PfL0zMSxp7t9fkAIzfI9cnKYlzWufcC2QdAvu+X6WUNsfXxDmklDZ9369y1mYNQNu2H8MwPEbES3gdfGcpIl5y7wEiXAdfg6OugwEAAAAAAACA6+MPIfMnH4BP8gGQD1A8+QBEyAconnwA5AOUTj4A+8kHuG7yAQonH6Bg8gEKJx+gVPIByiUfoEDyAQAAAAAAAACA//hDyPzJB+CTfADkAxRPPgAR8gGKJx8A+QClkw/AfvIBrpt8gMLJByiYfIDCyQcolXyAcskHKJB8AAAAAAAAAAAAAAAAKNRfv6soR2ZfPl0AAAAASUVORK5CYII=");
+    float: right;
+  }
+
+  .drawer_opener_icon:hover {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/ElEQVR4nO3cMU4bQRiG4W+Ng8UhUJQboBQpHFFRcJEUdJyFDgkukoIK4YIC5QYIcQhEYjwpsJDSsINwVtjzPPWuNdI/Wo+11psAAAAAAAAAAAAAAADrqnvrDddXt3tla3GUkoMu+Zzk039YF/X+lOQuXS66p9Hpt+9ffr3l5uoNMJvd74y7x5Ok+/GW+xhUScr5vEyOp9Pdh5obqgY5m93vjPP7Z7rsv299DKLkcp7tw5pNMKr5vHH3eGL4a6TL/vPTuubSHtdXt3sZLW5qruVDKVmMvvadCXqfAGVrcRTDX0fdcnav6v8KKDlYyXIYXsXsejfA8qcea6hmdlWHQDZX/xkguRtiIaxezez6nwBdLlayGoZXMbv+M8DT6DRJWcmCGFJZzu5VvRvg+XdkOV/NmhhOOa95L1B1CJyXyXFKLt+/KAZRcjkvk+OaS6s2wHS6+zDP9mFSzuLr4CMrSTmrfQ+QeB28Cd71OhgAAAAAAAAA2Dz+ELL+9AF4oQ9A9AGapw9A9AGapw/QPH2AtukD0EsfYIPpA7ROH6Bp+gBt0wdolz5As/QBGqQPAAAAAAAAAAD8wx9C1p8+AC/0AYg+QPP0AYg+QPP0AZqnD9A2fQB66QNsMH2A1ukDNE0foG36AO3SB2iWPkCD9AEAAAAAAAAAAAAAAKBRfwG5my7LG2NsdwAAAABJRU5ErkJggg==");
+  }
+}
