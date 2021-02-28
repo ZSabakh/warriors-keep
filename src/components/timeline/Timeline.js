@@ -41,45 +41,46 @@ const Timeline = () => {
           </div>
         </div>
       </div>
-
-      <Xarrow
-        lineColor="rgb(94, 102, 110)"
-        headSize={0}
-        strokeWidth={2}
-        path="grid"
-        startAnchor="right"
-        endAnchor="bottom"
-        start="xarrowBox"
-        end="xarrowLine"
-      />
-      <Xarrow
-        lineColor="rgb(94, 102, 110)"
-        headSize={0}
-        startAnchor="bottom"
-        strokeWidth={2}
-        path="grid"
-        start="xarrowLine"
-        end="xarrowImg"
-      />
-      <Xarrow
-        lineColor="rgb(94, 102, 110)"
-        headSize={0}
-        strokeWidth={2}
-        path="grid"
-        startAnchor="left"
-        endAnchor="bottom"
-        start="xarrowBox2"
-        end="xarrowLine"
-      />
-      <Xarrow
-        lineColor="rgb(94, 102, 110)"
-        headSize={0}
-        startAnchor="bottom"
-        strokeWidth={2}
-        path="grid"
-        start="xarrowLine"
-        end="xarrowImg2"
-      />
+      <div className="xarrows">
+        <Xarrow
+          lineColor="rgb(94, 102, 110)"
+          headSize={0}
+          strokeWidth={2}
+          path="grid"
+          startAnchor="right"
+          endAnchor="bottom"
+          start="xarrowBox"
+          end="xarrowLine"
+        />
+        <Xarrow
+          lineColor="rgb(94, 102, 110)"
+          headSize={0}
+          startAnchor="bottom"
+          strokeWidth={2}
+          path="grid"
+          start="xarrowLine"
+          end="xarrowImg"
+        />
+        <Xarrow
+          lineColor="rgb(94, 102, 110)"
+          headSize={0}
+          strokeWidth={2}
+          path="grid"
+          startAnchor="left"
+          endAnchor="bottom"
+          start="xarrowBox2"
+          end="xarrowLine"
+        />
+        <Xarrow
+          lineColor="rgb(94, 102, 110)"
+          headSize={0}
+          startAnchor="bottom"
+          strokeWidth={2}
+          path="grid"
+          start="xarrowLine"
+          end="xarrowImg2"
+        />
+      </div>
     </div>
   );
 };
