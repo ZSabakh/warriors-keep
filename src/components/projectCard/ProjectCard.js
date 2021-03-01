@@ -10,8 +10,9 @@ const ProjectCard = (props) => {
       <img src={props.image} />
       <h2>{props.milestone}</h2>
       <i>{props.description}</i>
-      <NavLink to={props.link}>
-        <button>More</button>
+
+      <NavLink to={props.link} style={{ width: "100%" }}>
+        <button>More </button>
       </NavLink>
     </div>
   );

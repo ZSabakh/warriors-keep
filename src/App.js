@@ -7,11 +7,13 @@ import Resources from "./containers/resources/Resources";
 import Contact from "./containers/contact/Contact";
 import Projects from "./containers/projects/Projects";
 import Project from "./containers/project/Project";
+import ScrollToTop from "./utility/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/resources" component={Resources} exact />
