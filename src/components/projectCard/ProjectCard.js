@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Projects from "../../containers/projects/Projects";
 import "./ProjectCard.css";
 
@@ -9,7 +10,9 @@ const ProjectCard = (props) => {
       <img src={props.image} />
       <h2>{props.milestone}</h2>
       <i>{props.description}</i>
-      <button>More</button>
+      <NavLink to={props.link}>
+        <button>More</button>
+      </NavLink>
     </div>
   );
 };

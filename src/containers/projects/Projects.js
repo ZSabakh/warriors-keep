@@ -11,6 +11,7 @@ const Projects = () => {
         milestone="MLSTN"
         description="Milestone descriptionMilestone descriptionMilestone descriptionMilestone
         description Milestone description"
+        link="/projects/project"
       />
       <ProjectCard
         name="Program name"
@@ -18,6 +19,7 @@ const Projects = () => {
         milestone="MLSTN"
         description="Milestone descriptionMilestone descriptionMilestone descriptionMilestone
         description Milestone description"
+        link="/projects/project"
       />
     </div>
   );

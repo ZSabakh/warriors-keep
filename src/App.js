@@ -6,6 +6,7 @@ import Home from "./containers/home/Home.jsx";
 import Resources from "./containers/resources/Resources";
 import Contact from "./containers/contact/Contact";
 import Projects from "./containers/projects/Projects";
+import Project from "./containers/project/Project";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/resources" component={Resources} exact />
         <Route path="/contact" component={Contact} exact />
         <Route path="/projects" component={Projects} exact />
+        <Route path="/projects/project" component={Project} exact />
       </Switch>
       <Footer />
     </Router>
