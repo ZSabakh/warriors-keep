@@ -24,10 +24,7 @@ const CustomCarousel = () => {
         </div>
       </div>
       <div>
-        <img
-          style={{ height: "420px" }}
-          src="https://patriotpaws.org/wp-content/uploads/2016/02/Brian-Field-Justice-RWVM-b-1500x430.jpg"
-        />
+        <img src="https://patriotpaws.org/wp-content/uploads/2016/02/Brian-Field-Justice-RWVM-b-1500x430.jpg" />
         <div className="slideContent">
           <h1>
             Professionally trained<u> dogs.</u>
@@ -36,10 +33,7 @@ const CustomCarousel = () => {
         </div>
       </div>
       <div>
-        <img
-          style={{ height: "420px" }}
-          src="https://patriotpaws.org/wp-content/uploads/2017/01/Prison-Jan-2017-1500x430.jpg"
-        />
+        <img src="https://patriotpaws.org/wp-content/uploads/2017/01/Prison-Jan-2017-1500x430.jpg" />
         <div className="slideContent">
           <h1>
             Dogs are <u>good.</u>

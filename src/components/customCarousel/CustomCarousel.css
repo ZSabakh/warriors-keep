@@ -77,3 +77,28 @@
   transition: 250ms;
   color: rgb(20, 20, 20);
 }
+
+@media only screen and (max-width: 767px) {
+  .carousel_container img {
+    height: 200px;
+  }
+  .carousel .slide .slideContent h1 {
+    font-size: 1.5rem;
+  }
+  .slideContent button {
+    padding: 5px;
+  }
+  .carousel .slide .slideContent h1 {
+    margin: 0 0 20px 0;
+  }
+  .carousel .slide .slideContent .carousel_button2 {
+    margin: 0 0 0 0;
+    padding: 5px;
+  }
+  .carousel_container .control-dots {
+    display: none;
+  }
+  .carousel .slide .slideContent {
+    padding: 0 0 0;
+  }
+}
