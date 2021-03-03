@@ -20,7 +20,7 @@ function App() {
         <Route path="/resources" component={Resources} exact />
         <Route path="/contact" component={Contact} exact />
         <Route path="/projects" component={Projects} exact />
-        <Route path="/projects/project" component={Project} exact />
+        <Route path="/projects/:id" component={Project} exact />
         <Route path="/about" component={About} exact />
       </Switch>
       <Footer />
