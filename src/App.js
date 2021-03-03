@@ -8,6 +8,7 @@ import Contact from "./containers/contact/Contact";
 import Projects from "./containers/projects/Projects";
 import Project from "./containers/project/Project";
 import ScrollToTop from "./utility/ScrollToTop";
+import About from "./containers/about/About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" component={Contact} exact />
         <Route path="/projects" component={Projects} exact />
         <Route path="/projects/project" component={Project} exact />
+        <Route path="/about" component={About} exact />
       </Switch>
       <Footer />
     </Router>
