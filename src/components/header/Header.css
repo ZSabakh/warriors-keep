@@ -128,8 +128,11 @@ ul li ul li {
 
   .logo {
     background-color: transparent;
-    height: 79px;
     box-shadow: none;
+    z-index: 0;
+    height: 100%;
+    padding: 0;
+    align-items: flex-start;
   }
 
   .drawer_opener_icon {

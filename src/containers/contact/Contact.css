@@ -80,7 +80,12 @@ fieldset {
   resize: none;
 }
 
+.captcha {
+  align-self: center;
+}
+
 #contact button[type="submit"] {
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   align-self: center;
   width: 55%;
@@ -93,11 +98,23 @@ fieldset {
   font-size: 1.1rem;
 }
 
+#contact button[type="submit-disabled"] {
+  cursor: not-allowed;
+  align-self: center;
+  width: 55%;
+  border: none;
+  background: #585858;
+  color: #fff;
+  border-radius: 0.2rem;
+  margin: 2.5% 0 5px;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
 #contact button[type="submit"]:hover {
   background: #e90041;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
 }
 
 #contact button[type="submit"]:active {

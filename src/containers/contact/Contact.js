@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
+
 const Contact = () => {
+  function onChange(value) {
+    setCaptchaPassed(true);
+  }
+  const [captchaPassed, setCaptchaPassed] = useState(false);
+
   return (
     <div className="contact_container">
       <div className="contact_box_container">
@@ -43,9 +50,16 @@ const Contact = () => {
             ></textarea>
           </fieldset>
           <fieldset>
+            <ReCAPTCHA
+              className="captcha"
+              sitekey="6Lfe3nAaAAAAAKi2iSzkBaoajfKZgDSYtNJmx5Fy"
+              onChange={onChange}
+            />
+
             <button
+              disabled={captchaPassed ? false : true}
               name="submit"
-              type="submit"
+              type={captchaPassed ? "submit" : "submit-disabled"}
               id="contact-submit"
               data-submit="...Sending"
             >
