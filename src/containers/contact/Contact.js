@@ -36,7 +36,6 @@ const Contact = () => {
               placeholder="Your Phone Number (Optional)"
               type="tel"
               tabIndex="3"
-              required
             />
           </fieldset>
           <fieldset>

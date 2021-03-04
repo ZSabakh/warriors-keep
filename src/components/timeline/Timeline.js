@@ -15,7 +15,7 @@ const Timeline = () => {
             </p>
           </div>
         </div>
-        <div class="vl" id="xarrowLine"></div>
+        <div className="vl" id="xarrowLine"></div>
         <div className="timeline_col2">
           <img
             id="xarrowImg"

@@ -35,6 +35,15 @@
 
 .drawer_wrapper ul li {
   list-style: none;
+  text-transform: capitalize;
+}
+
+.drawer_wrapper ul > li {
+  border-bottom: 1px solid #202c54;
+}
+
+.drawer_wrapper ul li ul li {
+  font-size: 0.8rem;
 }
 
 .drawer_wrapper ul li a {

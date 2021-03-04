@@ -26,7 +26,7 @@ const ProjectList = [
 const Projects = () => {
   return (
     <div className="projects_container">
-      {ProjectList.map((project) => {
+      {ProjectList.map((project, index) => {
         return (
           <ProjectCard
             name={project.name}
@@ -34,6 +34,7 @@ const Projects = () => {
             milestone={project.milestone}
             description={project.description}
             link={project.link}
+            key={index}
           />
         );
       })}
