@@ -11,6 +11,7 @@ const FounderInfo = () => {
           <i>SSGT. Military ranks</i>
         </h7>
       </div>
+      <hr />
       <div className="founder_story">
         <img src="http://www.poolroom.com/wp-content/uploads/2017/04/darrenappleton.jpg" />
         <div className="founder_text">

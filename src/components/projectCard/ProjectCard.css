@@ -31,16 +31,18 @@
 }
 
 .project_card_container button {
-  border: 1px solid #489db1;
-  background-color: #5dcae2;
+  border: 1px solid #202c54;
+  background-color: #2743a1;
   width: 100%;
   margin: 20px 0 0 0;
   padding: 10px;
+  color: rgb(243, 243, 243);
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
 .project_card_container button:hover {
-  background-color: #4798aa;
+  background-color: #202c54;
 }
 
 @media only screen and (max-width: 600px) {

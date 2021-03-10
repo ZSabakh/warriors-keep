@@ -12,8 +12,8 @@ const Contact = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
   function onFormSubmit() {
-    console.log("FORM SUBMITTED!");
     var templateParams = {
       subject: subject,
       email: senderEmail,
@@ -21,7 +21,6 @@ const Contact = () => {
       message: message,
       phone_number: phoneNumber,
     };
-
     emailjs
       .send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -30,7 +29,12 @@ const Contact = () => {
       )
       .then(
         function (response) {
-          console.log("SUCCESS!", response.status, response.text);
+          alert("Message has been sent sucessfully!");
+          console.log(
+            "Successfully sent message!",
+            response.status,
+            response.text
+          );
         },
         function (error) {
           console.log("FAILED...", error);

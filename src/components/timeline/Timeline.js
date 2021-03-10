@@ -19,7 +19,7 @@ const Timeline = () => {
         <div className="timeline_col2">
           <img
             id="xarrowImg"
-            src="http://www.southernoakkennels.com/wp-content/uploads/2015/06/southernoak_slider_4.jpg"
+            src="http://www.vitanet.de/f/108495s490x276c0x37_490x200/tiere/7230_is_Hund_Zecken_1000_16zu9.jpg"
           />
         </div>
       </div>
@@ -28,7 +28,7 @@ const Timeline = () => {
         <div className="timeline_col2">
           <img
             id="xarrowImg2"
-            src="http://www.southernoakkennels.com/wp-content/uploads/2015/06/southernoak_slider_4.jpg"
+            src="http://www.vitanet.de/f/108495s490x276c0x37_490x200/tiere/7230_is_Hund_Zecken_1000_16zu9.jpg"
           />
         </div>
         <div className="timeline_col1">
