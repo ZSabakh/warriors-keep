@@ -40,7 +40,13 @@ export default function Header() {
     {
       name: "about us",
       link: "/about",
-      sub: [],
+      sub: [
+        { name: "Our founder", link: "/about" },
+        {
+          name: "F.A.Q",
+          link: "/about/faq",
+        },
+      ],
     },
   ];
 

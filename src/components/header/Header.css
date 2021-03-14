@@ -89,6 +89,7 @@ header nav ul li ul {
   z-index: 9;
   background-color: #fff;
   display: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 header nav ul li ul a {
   color: #000 !important;
@@ -109,7 +110,7 @@ ul li ul li {
 .sub-menu {
   display: flex;
   align-items: flex-start;
-  margin-left: 220px;
+  margin-left: 250px;
 }
 
 .sub-menu li {

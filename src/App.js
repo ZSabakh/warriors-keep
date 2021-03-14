@@ -8,12 +8,15 @@ import Contact from "./containers/contact/Contact";
 import Projects from "./containers/projects/Projects";
 import Project from "./containers/project/Project";
 import ScrollToTop from "./utility/ScrollToTop";
+import ScrollToTopButton from "./utility/ScrollToTopButton";
+
 import About from "./containers/about/About";
 
 function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTopButton />
       <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact />

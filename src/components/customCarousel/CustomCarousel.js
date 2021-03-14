@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 import "./CustomCarousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -20,7 +21,9 @@ const CustomCarousel = () => {
           <h1>
             Veteran's <u>best friend.</u>
           </h1>
-          <button className="carousel_button1">See More</button>
+          <Link to="/projects/project">
+            <button className="carousel_button1">See More</button>
+          </Link>
         </div>
       </div>
       <div>
@@ -29,7 +32,9 @@ const CustomCarousel = () => {
           <h1>
             Professionally trained<u> dogs.</u>
           </h1>
-          <button className="carousel_button2">Why</button>
+          <Link to="/projects/project">
+            <button className="carousel_button2">Why</button>
+          </Link>
         </div>
       </div>
       <div>

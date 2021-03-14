@@ -4,8 +4,12 @@
   display: flex;
 }
 
+.timeline_row:nth-last-child(2) {
+  padding: 0 0 40px 0;
+}
+
 .timeline_container {
-  margin: 0 0 5vh 0;
+  margin: 0 0 0 0;
 }
 
 @media only screen and (max-width: 767px) {
