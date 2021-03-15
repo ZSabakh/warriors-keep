@@ -1,0 +1,17 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+
+.scroll-to-top img {
+  width: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .scroll-to-top img {
+    width: 45px;
+  }
+}
