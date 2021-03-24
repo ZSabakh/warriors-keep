@@ -41,7 +41,7 @@ export default function Header() {
       name: "about us",
       link: "/about",
       sub: [
-        { name: "Our founder", link: "/about" },
+        { name: "Our founder", link: "/about/" },
         {
           name: "F.A.Q",
           link: "/about/faq",
@@ -101,7 +101,7 @@ export default function Header() {
                       <div className="container sub-menu justify-content-start">
                         {item.sub.map((sub_item, sub_index) => (
                           <li key={sub_index}>
-                            <NavLink to={sub_item.link}>
+                            <NavLink to={sub_item.link} exact>
                               {sub_item.name}
                             </NavLink>
                           </li>

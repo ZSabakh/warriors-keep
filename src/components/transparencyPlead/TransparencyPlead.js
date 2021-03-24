@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./TransparencyPlead.css";
 
 const TransparencyPlead = () => {
@@ -18,7 +19,9 @@ const TransparencyPlead = () => {
         </div>
         <div>
           <p>Visit our dedicated documentations page</p>
-          <button>Go to FAQ</button>
+          <Link to="/about/faq">
+            <button>Go to FAQ</button>
+          </Link>
         </div>
       </div>
     </>

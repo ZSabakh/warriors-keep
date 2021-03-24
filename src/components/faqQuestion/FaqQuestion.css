@@ -1,0 +1,16 @@
+.question_container {
+  width: 70%;
+}
+
+.question_container h3 {
+  color: #22305f;
+  margin: 20px 0 30px 0;
+}
+
+.question_container li {
+  margin: 15px 0;
+}
+
+.question_container li::marker {
+  color: #e90041;
+}
