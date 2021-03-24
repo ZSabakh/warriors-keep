@@ -57,3 +57,7 @@
 .drawer_wrapper ul li a.active {
   color: #202c54 !important;
 }
+
+.drawer_donate {
+  font-size: 1.3rem;
+}

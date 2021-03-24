@@ -35,6 +35,9 @@ export default function ResponsiveMenu({ menu, isDrawerOpen, showDrawer }) {
               )}
             </li>
           ))}
+          <li className="drawer_donate">
+            <a href="https://google.com">Donate</a>
+          </li>
         </ul>
       </nav>
     </div>
