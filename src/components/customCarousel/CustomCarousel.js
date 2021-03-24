@@ -14,6 +14,8 @@ const CustomCarousel = () => {
       useKeyboardArrows={true}
       autoPlay={true}
       interval={3000}
+      swipeable={true}
+      verticalSwipe="standard"
     >
       <div>
         <img src="https://patriotpaws.org/wp-content/uploads/2016/02/Veteran-Slide-Elead-b-1438x430.jpg" />

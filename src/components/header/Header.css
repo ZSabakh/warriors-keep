@@ -135,6 +135,10 @@ ul li ul li {
     padding: 0;
     align-items: flex-start;
   }
+  .logo img {
+    width: auto;
+    height: 80px;
+  }
 
   .drawer_opener_icon {
     margin: 12px;
