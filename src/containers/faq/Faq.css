@@ -1,0 +1,7 @@
+.faq_container {
+  margin: 3% 0 3% 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}

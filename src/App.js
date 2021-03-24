@@ -9,8 +9,8 @@ import Projects from "./containers/projects/Projects";
 import Project from "./containers/project/Project";
 import ScrollToTop from "./utility/ScrollToTop";
 import ScrollToTopButton from "./utility/ScrollToTopButton";
-
 import About from "./containers/about/About";
+import Faq from "./containers/faq/Faq";
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path="/projects" component={Projects} exact />
         <Route path="/projects/:id" component={Project} exact />
         <Route path="/about" component={About} exact />
+        <Route path="/about/faq" component={Faq} exact />
       </Switch>
       <Footer />
     </Router>
