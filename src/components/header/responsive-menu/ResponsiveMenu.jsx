@@ -24,9 +24,9 @@ export default function ResponsiveMenu({ menu, isDrawerOpen, showDrawer }) {
                 <ul>
                   <div>
                     {item.sub.map((sub_item, sub_index) => (
-                      <li key={sub_index}>
-                        <NavLink to={sub_item.link}>{sub_item.name}</NavLink>
-                      </li>
+                      <NavLink to={sub_item.link}>
+                        <li key={sub_index}>{sub_item.name}</li>
+                      </NavLink>
                     ))}
                   </div>
                 </ul>
