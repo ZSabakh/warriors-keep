@@ -13,7 +13,7 @@ const CustomCarousel = () => {
       showArrows={true}
       useKeyboardArrows={true}
       autoPlay={true}
-      interval={3000}
+      interval={5000}
       swipeable={true}
       verticalSwipe="standard"
     >
@@ -23,8 +23,8 @@ const CustomCarousel = () => {
           <h1>
             Veteran's <u>best friend.</u>
           </h1>
-          <Link to="/projects/project">
-            <button className="carousel_button1">See More</button>
+          <Link to="/contact">
+            <button className="carousel_button1">Apply Here</button>
           </Link>
         </div>
       </div>
