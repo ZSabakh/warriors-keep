@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
@@ -54,6 +54,18 @@ const Contact = () => {
           }}
           noValidate
         >
+          <h3>Application</h3>
+          <p>
+            For application,{" "}
+            <a href={process.env.PUBLIC_URL + "/uploads/application.docx"}>
+              click here to download the form
+            </a>
+            , then fill it out and mail it to{" "}
+            <a href="mailto:darrenpool@warriorskeep.faith">
+              darrenpool@warriorskeep.faith
+            </a>
+            . In other cases, use the contact form below.
+          </p>
           <h3>Contact Form</h3>
           <h4>We typically reply within 24 hours!</h4>
           <fieldset>

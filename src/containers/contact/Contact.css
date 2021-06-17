@@ -10,6 +10,12 @@
   width: 60%;
 }
 
+.contact_box_container p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 7px 0 25px 0;
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],

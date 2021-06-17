@@ -1,5 +1,6 @@
 import React from "react";
 import Xarrow from "react-xarrows";
+import { Link } from "react-router-dom";
 import "./Timeline.css";
 
 const Timeline = () => {
@@ -28,15 +29,17 @@ const Timeline = () => {
         <div className="timeline_col2">
           <img
             id="xarrowImg2"
-            src="http://www.vitanet.de/f/108495s490x276c0x37_490x200/tiere/7230_is_Hund_Zecken_1000_16zu9.jpg"
+            src={process.env.PUBLIC_URL + "/uploads/application.jpg"}
           />
         </div>
         <div className="timeline_col1">
           <div className="timeline_box" id="xarrowBox2">
-            <h2>What we do</h2>
+            <h2>Application</h2>
             <p>
-              <i>Some text about &nbsp;</i>
-              <u>our mission.</u>
+              <i>Veteran application for program is &nbsp;</i>
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                <u>available here.</u>
+              </Link>
             </p>
           </div>
         </div>
