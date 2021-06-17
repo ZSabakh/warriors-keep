@@ -39,7 +39,7 @@ const Project = (props) => {
           src="https://www.youtube.com/embed/LkbC8Tbqb-Q"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <p>{projectContent.paragraphs[1]}</p>
         <p>{projectContent.paragraphs[2]}</p>
